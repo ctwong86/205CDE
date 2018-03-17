@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<h3 style="color: white"><strong>Products</strong></h3>
+<!-- show posted products' details by users -->
+<ul class="list-group">
+    {% for product in products %}
+
+      <li class="list-group-item"><p><strong>{{ product.title }}</strong>
+      <small>By {{ product.created_by }} on {{ product.created_date }}</small>
+      <p>{{ product.body }}<p>
+      </li>
+
+    {% endfor %}
+</ul>
+
+{% endblock %}

@@ -1,0 +1,13 @@
+<!-- Still testing, not working -->
+{% extends 'layout.html' %}
+
+{% block body %}
+
+  <h1>{{ product.title }}</h1>
+  <small>By {{ product.created_by }} on {{ product.created_date }}</small>
+  <hr>
+  <div>
+    {{ product.body }}
+  </div>
+
+{% endblock %}

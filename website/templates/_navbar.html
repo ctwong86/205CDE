@@ -1,0 +1,29 @@
+<!-- navbar for each html document -->
+<nav class="navbar navbar-default">
+	<div class="container-fluid" style="border-style: solid;">
+		<div class="navbar-header" style="">
+			<a class="navbar-brand" href="/"><strong>Home</strong></a>
+		</div>
+		<ul class="nav navbar-nav">
+      		<li class="active"><a href="/products">Product</a></li>
+
+      		{% if session.logged_in %}
+
+      		<li><a href="/orders">Order</a></li>
+     		<li><a href="/dashboard"><strong>Dashboard</stonrg></a></li>
+
+      		{% endif %}
+     	</ul>
+     	<ul class="nav navbar-nav navbar-right">
+     		{% if session.logged_in %}
+
+      			<li><a href="/logout"><strong>Logout</stonrg></a></li>
+
+      		{% else %}
+     			<li><a href="/login"><strong>Login</strong></a></li>
+    			<li><a href="/register"><strong>Register</stonrg></a></li>
+
+     		{% endif %}
+   	 	</ul>
+  	</div>
+</nav>

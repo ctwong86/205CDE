@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+	
+	<h3 style="color: white"><strong>Dashoard, {{ session.username }}</strong></h3>
+	<hr>
+	<!-- Button for users to add products -->
+	<a class="btn btn-success" href="add_product">Add Product</a>
+	<hr>
+	<!-- Tables recording posted products-->
+	<table class="table table-bordered">
+		<tr>
+			<th style="color: white">ID</th>
+			<th style="color: white">Title</th>
+			<th style="color: white">Created by</th>
+			<th style="color: white">Date</th>
+		</tr>
+
+		{% for product in products %}
+
+		<tr>
+			<td style="color: white">{{ product.id}}</td>
+			<td style="color: white">{{ product.title }}</td>
+			<td style="color: white">{{ product.created_by }}</td>
+			<td style="color: white">{{ product.created_date }}</td>
+		</tr>
+
+		{% endfor %}
+		
+{% endblock %}

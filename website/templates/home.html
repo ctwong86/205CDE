@@ -1,0 +1,74 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<!-- Container for carousel -->
+<div class="container">
+	 <p style="font-size: 20px;
+  		   color: white;
+           text-align: center;
+           font-family: Comic Sans Ms, Comic Sans, cursive;">
+
+       	   GameSites
+ 	</p>
+	<div id="carousel" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<!-- Control how the carosel slide -->
+			<li data-target="#carousel" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel" data-slide-to="1"></li>
+			<li data-target="#carousel" data-slide-to="2"></li>
+		</ol>
+
+		<!-- Each image in slide -->	
+		<div class="carousel-inner">
+			<div class="item active">
+				<img src="static/image/carousel_image1.jpg" style="opacity: 0.98;">
+				<div class="carousel-caption">
+					<p style="font-family: Comic Sans Ms, Comic Sans, cursive; font-size: 18px;">Dark Souls 3<a href=/products>...</a></p>
+				</div>
+			</div>
+
+			<div class="item">
+				<img src="static/image/carousel_image2.jpg" style="opacity: 0.98;">
+				<div class="carousel-caption">
+					<p style="font-family: Comic Sans Ms, Comic Sans, cursive; font-size: 18px;">Final Fantasy XV<a href=/products>...</a></p>
+				</div>
+			</div>
+
+			<div class="item">
+				<img src="static/image/carousel_image3.jpg" style="opacity: 0.98;">
+				<div class="carousel-caption">
+					<p style="font-family: Comic Sans Ms, Comic Sans, cursive; font-size: 18px;">Monster Hunter World<a href=/products>...</a></p>
+				</div>
+			</div>
+		</div>
+		<!-- Control movement-->
+		<a class="left carousel-control" href="#carousel" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>	
+
+		<a class="right carousel-control" href="#carousel" data-slide="next">
+    		<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</div>
+</div></br>
+
+ <p class="container-fluid;" 
+    style="font-size: 20px;
+  		   color: white;
+           text-align: center;">
+
+		   Welcome to GameSites! You can check the products in our <a href=/products style="
+		   color: white; text-decoration: underline;">Product</a> page. We also provide a online trading 	platform. You can register an account and login to create articles about what are you going to sell or buy. Feel Free to contact us if there is any problems.
+ </p>
+<br>
+ <p style="font-size: 20px;
+  		   color: white;
+           text-align: right;">
+
+       	   Contact: gamesites_hk@gmail.com
+ </p>
+</br></br>
+
+{% endblock %}
+</html>

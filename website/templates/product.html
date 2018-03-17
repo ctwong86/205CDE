@@ -1,0 +1,17 @@
+<!-- Still testing, not working -->
+{% extends 'layout.html' %}
+
+{% block body %}
+
+	{% if user %}
+		<h3 style="color: white" font-family: Comic Sans Ms, Comic Sans><b>Welcome, {{ user }}</b></h3>
+	{% else %}
+		<h3 style="color: white" font-family: Comic Sans Ms, Comic Sans><b>Please Log In</b></h3>
+	{% endif %}
+
+
+	<h2>{{id}}</h2>
+	<h2>{{title}}</h2>
+	asdasdasdasdasas
+	
+{% endblock %}
